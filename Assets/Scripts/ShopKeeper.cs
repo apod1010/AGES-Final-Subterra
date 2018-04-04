@@ -17,7 +17,7 @@ public class ShopKeeper : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             guiObject.SetActive(true);
-            if (guiObject.activeInHierarchy == true && Input.GetButtonDown("Use"))
+            if (guiObject.activeInHierarchy == true && Input.GetButtonDown("Use") && ScrapManager.Instance.ScrapCount > 0)
             {
                 ScrapManager.Instance.ScrapCount--;
             }

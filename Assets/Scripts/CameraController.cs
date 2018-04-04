@@ -25,8 +25,8 @@ public class CameraController : MonoBehaviour {
         translateH *= Time.deltaTime;
         
 
-        transform.Translate(0, 0, translateV, Space.World);
-        transform.Translate(translateH, 0, 0, Space.World);
+        transform.Translate(0, 0, translateV, Space.Self);
+        transform.Translate(translateH, 0, 0, Space.Self);
 
         if (zoom > 0f)
         {
